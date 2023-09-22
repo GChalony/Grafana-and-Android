@@ -1,0 +1,27 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+    }
+}
+rootProject.name = "Dronoblade-Android"
+include ':app'
+include ':libPhysics'
+include ':libTrajectoryParser'
+include ':iDroneInterface'
+include ':libDJIDrivers'
+include ':libAutoPilot'
+include ':libCnsServers'
+include ':libUtils'
+include ':core'
+include ':ui-widgets'
+include ':libCnsIPCDrivers'
